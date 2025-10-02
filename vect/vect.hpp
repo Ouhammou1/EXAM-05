@@ -25,12 +25,22 @@ public:
     vect operator*(int scaler) const ;
 
 
+    int  &operator[](int index);
+    const int &operator[](int index) const;
+
+
+
     vect operator++()  ;
     vect operator--()  ;
     vect operator++(int)  ;
     vect operator--(int )  ;
 
 
+    bool operator==(const vect &v);
+    bool operator!=(const vect &v);
+
+    bool operator==(const vect &v)const;
+    bool operator!=(const vect &v)const;
 
 
 };

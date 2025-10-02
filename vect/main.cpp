@@ -10,29 +10,39 @@ int main()
 
 	// std::cout << "v1: " << "{" << v1[0] << ", " << v1[1] << "}" << std::endl; // should be the same as above
 
-	std::cout << "v1: " << v1  << std::endl;
-	std::cout << "v2: " << v2 << std::endl;
-	std::cout << "v3: " << v3 << std::endl;
-	std::cout << "v4: " << v4 << std::endl;
+	std::cout << "v1: " << (v3 == v2)  << std::endl;
+	// std::cout << "v2: " << v2 << std::endl;
+	// std::cout << "v3: " << v3 << std::endl;
+	// std::cout << "v4: " << v4 << std::endl;
 
 
-    vect v5 = v3 + v2;
-    vect v6 = v5 - v4;
-    vect v7 = v6 *8;
+    // vect v5 = v3 + v2;
+    // vect v6 = v5 - v4;
+    // vect v7 = v6 *8;
 
-    std::cout << "v5: " << v5  << std::endl;
-	std::cout << "v6: " << v6 << std::endl;
-	std::cout << "v7: " << v7 << std::endl;
+    // std::cout << "v5: " << v5  << std::endl;
+	// std::cout << "v6: " << v6 << std::endl;
+	// std::cout << "v7: " << v7 << std::endl;
 
-	std::cout << "v7++: " << v7++ << std::endl;
-	std::cout << "v7: " << v7 << std::endl;
+	// std::cout << "v7++: " << v7++ << std::endl;
+	// std::cout << "v7: " << v7 << std::endl;
 
-    std::cout << "--v5: " << --v5  << std::endl;
+    // std::cout << "--v5: " << --v5  << std::endl;
 
-    vect v0 = v1 + v2 -v5;
-    std::cout << "v0 = v1 + v2 - v5 " << v0 << std::endl ;
+    // vect v0 = v1 + v2 -v5;
+    // std::cout << "v0 = v1 + v2 - v5 " << v0 << std::endl ;
 
 
+	// int s = v2[1];
+	// v2[1] = 56;
+	// int q = v2[1];
+
+	// std::cout << "s= " << s << std::endl;
+	// std::cout << "q= " << q << std::endl;
+
+
+	// int b = v3[1];
+	// std::cout << "b = " << b<< std::endl;
 
 
 	// std::cout << v4++ << std::endl;	// 2,3

@@ -28,7 +28,7 @@ vect& vect::operator=(const vect &other)
 
 std::ostream& operator<<(std::ostream &s , const vect &v)
 {
-    s << "{" << v.getX() << ", " << v.getY() << "}" << std::endl;
+    s << "{" << v[0] << ", " << v[1] << "}" << std::endl;
     return s;
 }
 
@@ -83,4 +83,53 @@ vect vect::operator--(int )
     --this->x;
     --this->y;
     return tmp;
+}
+
+
+int  &vect::operator[](int index)
+{
+    if (index == 0)
+        return x;
+    else
+        return  y;
+    
+}
+
+const int &vect::operator[](int index) const
+{
+    if (index == 0)
+        return x;
+    else
+        return  y;
+    
+}
+
+
+bool vect::operator==(const vect &v)
+{
+    if(this->x == v.getX() &&  this->y == v.getY())
+        return true;
+    else
+        return false;
+}
+bool vect::operator!=(const vect &v)
+{
+    if(this->x == v.getX() &&  this->y == v.getY())
+        return false;
+    else
+        return true;
+}
+bool vect::operator==(const vect &v) const
+{
+    if(this->x == v.getX() &&  this->y == v.getY())
+        return true;
+    else
+        return false;
+}
+bool vect::operator!=(const vect &v) const
+{
+    if(this->x == v.getX() &&  this->y == v.getY())
+        return false;
+    else
+        return true;
 }
